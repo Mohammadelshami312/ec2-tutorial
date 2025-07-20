@@ -1,0 +1,16 @@
+mkdir express-prisma-api && cd express-prisma-api
+npm init -y
+
+# Express + TypeScript
+npm install express cors
+npm install -D typescript ts-node-dev @types/express @types/node
+
+# Prisma + SQLite
+npm install prisma @prisma/client
+
+2) npx tsc --init
+3) npx prisma init
+4) Models
+5) DATABASE_URL in .env
+6)npx prisma migrate dev --name init
+7)npx prisma generate
